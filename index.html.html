@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Interaktif Teorema Pythagoras</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #ffe6f9, #c9e9ff);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff99cc, #66ccff);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    main {
+      max-width: 1000px;
+      background: white;
+      margin: 40px auto;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(255, 182, 193, 0.4);
+    }
+
+    h2 {
+      color: #ff66b2;
+      border-bottom: 3px solid #80d4ff;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .materi {
+      line-height: 1.7;
+      font-size: 17px;
+      color: #444;
+    }
+
+    .rumus {
+      background: #f0f9ff;
+      border-left: 6px solid #80d4ff;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 600;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .contoh {
+      background: #fff0f7;
+      border-left: 6px solid #ff99cc;
+      padding: 12px 18px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 15px;
+      margin-top: 15px;
+      box-shadow: 0 6px 20px rgba(128, 207, 255, 0.4);
+    }
+
+    .quiz-section {
+      margin-top: 40px;
+      padding: 25px;
+      background: #fdf3ff;
+      border-radius: 20px;
+      border: 2px dashed #ffb6e0;
+    }
+
+    .question {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .options button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: #e0f4ff;
+      color: #333;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .options button:hover {
+      background: #ffccf2;
+      transform: scale(1.03);
+    }
+
+    .feedback {
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    .benar {
+      color: #0a8f0a;
+    }
+
+    .salah {
+      color: #d11a5f;
+    }
+
+    .link-btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #ff80bf, #80cfff);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(255, 128, 191, 0.4);
+    }
+
+    .link-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(128, 207, 255, 0.6);
+    }
+
+    .about {
+      max-width: 600px;
+      background: #fff;
+      margin: 40px auto 0 auto;
+      padding: 30px 35px;
+      border-radius: 20px;
+      text-align: center;
+      border: 2px solid #ffe0f0;
+      box-shadow: 0 4px 16px rgba(128, 207, 255, 0.2);
+    }
+
+    .about img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      margin-bottom: 16px;
+      border: 4px solid #ffb3e6;
+      box-shadow: 0 4px 10px rgba(255, 128, 191, 0.3);
+    }
+
+    .about h3 {
+      margin-bottom: 10px;
+      color: #ff69b4;
+      font-weight: 700;
+    }
+
+    .about p {
+      color: #555;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 14px;
+      color: #555;
+      background: linear-gradient(90deg, #ff99cc, #80d4ff);
+      width: 100%;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Media Interaktif Teorema Pythagoras</h1>
+    <p>Teorema Pythagoras bukan hanya tentang matematika, tetapi tentang bagaimana kita memahami ruang, jarak, dan hubungan antara bentuk-bentuk yang ada di dunia!</p>
+  </header>
+
+  <main>
+    <section class="materi">
+      <h2>Pengertian</h2>
+      <p>
+        Teorema Pythagoras adalah sebuah teorema dalam geometri yang menyatakan bahwa
+        pada <b>segitiga siku-siku</b>, <b>kuadrat sisi miring (hipotenusa)</b> sama dengan
+        <b>jumlah kuadrat dua sisi lainnya</b>.
+      </p>
+
+      <div class="rumus">
+        Rumus: <br><b>c² = a² + b²</b>
+      </div>
+
+      <div class="contoh">
+        <h3>Contoh Soal</h3>
+        <p>
+          Sebuah segitiga siku-siku memiliki sisi alas 6 cm dan tinggi 8 cm.
+          Berapakah panjang sisi miringnya?
+        </p>
+        <p><b>Penyelesaian:</b></p>
+        <p>
+          c² = 6² + 8² <br>
+          c² = 36 + 64 = 100 <br>
+          c = √100 = <b>10 cm</b>
+        </p>
+      </div>
+
+      <h2>Video Pembelajaran</h2>
+      <p>Tonton video berikut untuk memahami konsep Teorema Pythagoras lebih dalam 👇</p>
+
+      <div style="text-align:center; margin-top:20px;">
+        <a href="https://drive.google.com/file/d/12DQFysn_Lk2oFoKUS0oy7cNB_5rNt2_m/view?usp=drivesdk" target="_blank" class="link-btn">Video Materi</a>
+      </div>
+    </section>
+
+    <section class="quiz-section">
+      <h2>Kuis Interaktif (10 Soal)</h2>
+      <div id="quiz-container">
+        <div class="question" id="question">Soal akan muncul di sini</div>
+        <div class="options" id="options"></div>
+        <div class="feedback" id="feedback"></div>
+        <button id="next-btn" style="display:none; margin-top:15px; padding:10px 20px; background:#80d4ff; border:none; border-radius:10px; cursor:pointer; color:white; font-weight:600;">Soal Selanjutnya ▶</button>
+      </div>
+    </section>
+  </main>
+
+  <section class="about">
+    <img src="desti.saja.jpg" alt="Profil Pembuat" />
+    <h3>Tentang Saya</h3>
+    <p><strong>Nama:</strong> Desti<br><strong>NIM:</strong> B2B023053</p>
+    <p>Belajar hari ini untuk masa depan yang lebih baik 💖💙</p>
+  </section>
+
+  <footer>
+    © 2025 — Media Interaktif Matematika | Teorema Pythagoras Kelas VIII
+  </footer>
+
+  <script>
+    const quizData = [
+      { question: "1. Rumus Teorema Pythagoras adalah...", options: ["a² + b² = c²", "a² = b² + c²", "a + b = c", "2a = b + c"], answer: 0 },
+      { question: "2. Jika a = 3 dan b = 4, maka c = ...", options: ["5", "6", "7", "8"], answer: 0 },
+      { question: "3. Hipotenusa adalah sisi yang ...", options: ["Tegak lurus", "Terpanjang", "Terdekat", "Terkecil"], answer: 1 },
+      { question: "4. Jika sisi miring 13 cm dan satu sisi siku-siku 5 cm, maka sisi lainnya adalah ...", options: ["8 cm", "9 cm", "10 cm", "12 cm"], answer: 3 },
+      { question: "5. Teorema Pythagoras hanya berlaku pada segitiga ...", options: ["Sembarang", "Sama kaki", "Siku-siku", "Sama sisi"], answer: 2 },
+      { question: "6. Segitiga dengan sisi 6, 8, 10 disebut ...", options: ["Triple Pythagoras", "Segitiga sama kaki", "Segitiga tumpul", "Segitiga lancip"], answer: 0 },
+      { question: "7. Dalam teorema c² = a² + b², c adalah ...", options: ["Sisi miring", "Sisi tegak", "Sisi alas", "Sisi sebarang"], answer: 0 },
+      { question: "8. Jika sisi alas 5 cm dan sisi miring 13 cm, maka sisi tinggi adalah ...", options: ["8 cm", "9 cm", "10 cm", "12 cm"], answer: 3 },
+      { question: "9. Teorema Pythagoras ditemukan oleh ...", options: ["Euclid", "Archimedes", "Pythagoras", "Pascal"], answer: 2 },
+      { question: "10. Penerapan Pythagoras dalam kehidupan nyata contohnya ...", options: ["Mengukur jarak miring tangga", "Menghitung luas lingkaran", "Menentukan kecepatan mobil", "Menaksir volume air"], answer: 0 },
+    ];
+
+    let currentQuestion = 0;
+    let score = 0;
+
+    const questionEl = document.getElementById("question");
+    const optionsEl = document.getElementById("options");
+    const feedbackEl = document.getElementById("feedback");
+    const nextBtn = document.getElementById("next-btn");
+
+    function loadQuestion() {
+      const q = quizData[currentQuestion];
+      questionEl.textContent = q.question;
+      optionsEl.innerHTML = "";
+      feedbackEl.textContent = "";
+      nextBtn.style.display = "none";
+
+      q.options.forEach((opt, index) => {
+        const btn = document.createElement("button");
+        btn.textContent = opt;
+        btn.onclick = () => checkAnswer(index);
+        optionsEl.appendChild(btn);
+      });
+    }
+
+    function checkAnswer(selected) {
+      const q = quizData[currentQuestion];
+      if (selected === q.answer) {
+        feedbackEl.textContent = "Benar! 🎉";
+        feedbackEl.className = "feedback benar";
+        score++;
+      } else {
+        feedbackEl.textContent = "Salah 😅 Jawaban benar: " + q.options[q.answer];
+        feedbackEl.className = "feedback salah";
+      }
+      nextBtn.style.display = "inline-block";
+    }
+
+    nextBtn.onclick = () => {
+      currentQuestion++;
+      if (currentQuestion < quizData.length) {
+        loadQuestion();
+      } else {
+        showResult();
+      }
+    };
+
+    function showResult() {
+      questionEl.textContent = "Kuis Selesai!";
+      optionsEl.innerHTML = "";
+      feedbackEl.innerHTML = `Skor akhir kamu: <b>${score}</b> dari <b>${quizData.length}</b> soal 🎯<br>` +
+        (score >= 8 ? "Keren banget! Kamu sangat paham! 🌟" :
+        score >= 5 ? "Bagus! Tapi masih bisa lebih baik 😊" :
+        "Yuk belajar lagi supaya makin paham 💪");
+      nextBtn.style.display = "none";
+    }
+
+    loadQuestion();
+  </script>
+</body>
+</html>
