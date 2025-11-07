@@ -1,0 +1,2 @@
+# pythagoras
+kelas 8
